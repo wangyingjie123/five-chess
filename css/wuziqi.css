@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+body{
+    background: url("../img/1.jpg")no-repeat center center;
+    background-size: cover;
+    
+}
+.wuziqi{
+    width:1160px;
+    height:600px;
+    position: relative;
+    left: 0;
+    top:30px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+.left,.right{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+    background-size: 200px 200px;
+    box-shadow: 5px 5px 10px #000;
+}
+.left{
+    top:120px;
+    left: 380px;
+    background: url("../img/left.jpg")no-repeat center center;
+}
+.right{
+    top:120px;
+    right:380px;
+    background: url("../img/right.jpg")no-repeat center center;
+}
+
+
+#canvas{
+    border: 1px solid #000;
+    background:#d4a788;
+    position: absolute;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 8px 8px 15px #666;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.wuziqi .qipa{
+    transition:transform 1s ease .5s;
+    transform:scale(1,1);
+}
+.qipan{
+    transform:scale(0,0);
+}
+.restart{
+    position: absolute;
+    top:690px;
+    left: 50%;
+    margin-left:-170px;
+    width: 140px;
+    height: 40px;
+    background: #0056b3;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    opacity:0; 
+}
+.renji{
+    position: absolute;
+    top:690px;
+    left: 50%;
+    margin-left:30px;
+    width: 140px;
+    height: 40px;
+    background: #b46a09;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    opacity: 0;
+}
+.renji2{
+    transition:opacity .8s ease .8s;
+    opacity: 1;
+}
+.start{
+    position: absolute;
+    top:690px;
+    left: 50%;
+    margin-left:-70px;
+    width: 140px;
+    height: 40px;
+    background: #954514;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.active{
+    background:#ccc;
+}
+#jishileft{
+    position: absolute;
+    z-index:3;
+    top:35px;
+    left:500px;
+    background: url('../img/biaopan2.jpeg')no-repeat center center;
+    background-size: 100px 100px;
+
+}
+#jishiright{
+    position: absolute;
+    z-index:3;
+    top:35px;
+    right:500px;
+    background: url('../img/biaopan2.jpeg')no-repeat center center;
+    background-size: 100px 100px;
+    border-radius: 50%;
+}
+.left1,.right1{
+    display: none;
+}
+.chuxian{
+    display:block;
+}
